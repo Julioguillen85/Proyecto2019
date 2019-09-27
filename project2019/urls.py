@@ -20,6 +20,8 @@ from portfolio import views as portfolio_views
 
 from django.conf import settings
 
+
+
 urlpatterns = [
     path('', portfolio_views.portfolio, name="portfolio"),
     
@@ -28,6 +30,7 @@ urlpatterns = [
 
     path('contacto/', core_views.contacto, name="contacto"),
     path('admin/', admin.site.urls),
+     
     
 ]
 
